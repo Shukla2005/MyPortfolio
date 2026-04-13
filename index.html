@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arjun Shukla — Full Stack Developer & ML Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CUSTOM CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ─── NAVBAR ─── -->
+  <nav id="navbar">
+    <div class="nav-logo">AS.</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about"     onclick="closeMenu()">About</a></li>
+      <li><a href="#skills"    onclick="closeMenu()">Skills</a></li>
+      <li><a href="#projects"  onclick="closeMenu()">Projects</a></li>
+      <li><a href="#education" onclick="closeMenu()">Education</a></li>
+      <li><a href="#contact"   onclick="closeMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">Available for Internships &amp; Collaborations</div>
+
+      <h1 class="hero-name">
+        Arjun<br /><span>Shukla</span>
+      </h1>
+
+      <p class="hero-title">
+        <strong>Full Stack Developer</strong> &amp; <strong>ML Engineer</strong>
+      </p>
+
+      <p class="hero-tagline">
+        <!-- Typed via JS -->
+        <span class="typing-cursor"></span>
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-primary"><span>🚀 View My Work</span></a>
+        <a href="#contact"  class="btn-outline">✉ Get In Touch</a>
+      </div>
+    </div>
+
+    <!-- Floating stats -->
+    <div class="hero-floats">
+      <div class="hero-stat" style="animation: float 3s ease-in-out infinite;">
+        <div class="num">150+</div>
+        <div class="lbl">LeetCode Problems</div>
+      </div>
+      <div class="hero-stat" style="animation: float 3s ease-in-out 0.5s infinite;">
+        <div class="num">4★</div>
+        <div class="lbl">HackerRank</div>
+      </div>
+      <div class="hero-stat" style="animation: float 3s ease-in-out 1s infinite;">
+        <div class="num">4+</div>
+        <div class="lbl">Certifications</div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="line"></div>
+      SCROLL
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about">
+    <div class="section-label">01 — About</div>
+    <h2 class="section-title">Who <span>I Am</span></h2>
+
+    <div class="about-grid">
+      <!-- Text -->
+      <div class="about-text reveal">
+        <p>
+          I'm a <strong>B.Tech Computer Science student</strong> at Pranveer Singh Institute of Technology,
+          Kanpur, deeply passionate about building intelligent, scalable systems that solve real-world problems.
+        </p>
+        <p>
+          My stack spans <strong>full-stack web development</strong> with React, Node.js, and modern frameworks,
+          combined with a growing expertise in <strong>AI &amp; Machine Learning</strong> using TensorFlow,
+          scikit-learn, and NLP libraries.
+        </p>
+        <p>
+          I love the intersection of data and UI — bringing machine intelligence to beautifully crafted
+          interfaces. Currently building an <strong>AI-powered rockfall prediction system</strong> using
+          geospatial data.
+        </p>
+
+        <div class="about-meta">
+          <div class="meta-item">
+            <span class="icon">📍</span>
+            <div>
+              <div class="label">Location</div>
+              <div class="value">Farrukhabad, Uttar Pradesh, India</div>
+            </div>
+          </div>
+          <div class="meta-item">
+            <span class="icon">🎓</span>
+            <div>
+              <div class="label">Studying At</div>
+              <div class="value">PSIT Kanpur — B.Tech CSE (2023–2027)</div>
+            </div>
+          </div>
+          <div class="meta-item">
+            <span class="icon">📧</span>
+            <div>
+              <div class="label">Email</div>
+              <div class="value">shuklaarjun101@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Code card -->
+      <div class="about-visual reveal reveal-delay-2">
+        <div class="code-card" style="animation: pulse-glow 3s ease-in-out infinite;">
+          <div class="bar"><span></span><span></span><span></span></div>
+          <div class="c-line"><span class="c-kw">const</span>&nbsp;<span class="c-fn">arjun</span>&nbsp;=&nbsp;{</div>
+          <div class="c-line c-indent"><span class="c-str">name</span>:&nbsp;<span class="c-str">"Arjun Shukla"</span>,</div>
+          <div class="c-line c-indent"><span class="c-str">role</span>:&nbsp;<span class="c-str">"Full Stack + ML"</span>,</div>
+          <div class="c-line c-indent"><span class="c-str">university</span>:&nbsp;<span class="c-str">"PSIT Kanpur"</span>,</div>
+          <div class="c-line c-indent"><span class="c-str">skills</span>:&nbsp;[</div>
+          <div class="c-line c-indent2"><span class="c-str">"React"</span>,&nbsp;<span class="c-str">"Node.js"</span>,</div>
+          <div class="c-line c-indent2"><span class="c-str">"Python"</span>,&nbsp;<span class="c-str">"TensorFlow"</span>,</div>
+          <div class="c-line c-indent2"><span class="c-str">"MongoDB"</span>,&nbsp;<span class="c-str">"Docker"</span></div>
+          <div class="c-line c-indent">],</div>
+          <div class="c-line c-indent"><span class="c-str">leetcode</span>:&nbsp;<span class="c-num">150+</span>,</div>
+          <div class="c-line c-indent"><span class="c-str">available</span>:&nbsp;<span class="c-kw">true</span></div>
+          <div class="c-line">};</div>
+          <br />
+          <div class="c-line c-cm">// Always building something new ✨</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section id="skills">
+    <div class="section-label">02 — Skills</div>
+    <h2 class="section-title">Tech <span>Arsenal</span></h2>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <div class="skill-card-name">React.js / Next.js</div>
+          <div class="skill-card-pct">90%</div>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-pct="90"></div></div>
+        <div class="skill-category">Frontend Framework</div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-card-header">
+          <div class="skill-card-name">Node.js / Express</div>
+          <div class="skill-card-pct">85%</div>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div>
+        <div class="skill-category">Backend Development</div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-card-header">
+          <div class="skill-card-name">Python</div>
+          <div class="skill-card-pct">88%</div>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-pct="88"></div></div>
+        <div class="skill-category">Language</div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-header">
+          <div class="skill-card-name">Machine Learning</div>
+          <div class="skill-card-pct">80%</div>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-pct="80"></div></div>
+        <div class="skill-category">AI / scikit-learn / TF</div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-card-header">
+          <div class="skill-card-name">C / C++</div>
+          <div class="skill-card-pct">85%</div>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-pct="85"></div></div>
+        <div class="skill-category">Systems Programming</div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-card-header">
+          <div class="skill-card-name">MongoDB / PostgreSQL</div>
+          <div class="skill-card-pct">78%</div>
+        </div>
+        <div class="skill-bar"><div class="skill-fill" data-pct="78"></div></div>
+        <div class="skill-category">Databases</div>
+      </div>
+    </div>
+
+    <!-- Tech tag cloud -->
+    <div class="skills-tags reveal">
+      <div class="skills-tags-title">Full Stack</div>
+      <div class="tags-row">
+        <span class="tag cyan">React.js</span>
+        <span class="tag cyan">Next.js</span>
+        <span class="tag cyan">TypeScript</span>
+        <span class="tag cyan">Tailwind CSS</span>
+        <span class="tag cyan">Node.js</span>
+        <span class="tag cyan">Express.js</span>
+        <span class="tag cyan">NestJS</span>
+      </div>
+
+      <div class="skills-tags-title" style="margin-top:20px">AI / ML</div>
+      <div class="tags-row">
+        <span class="tag purple">TensorFlow</span>
+        <span class="tag purple">scikit-learn</span>
+        <span class="tag purple">NumPy</span>
+        <span class="tag purple">Pandas</span>
+        <span class="tag purple">spaCy / NLTK</span>
+        <span class="tag purple">Matplotlib</span>
+      </div>
+
+      <div class="skills-tags-title" style="margin-top:20px">DevOps &amp; Tools</div>
+      <div class="tags-row">
+        <span class="tag blue">Git / GitHub</span>
+        <span class="tag blue">Docker</span>
+        <span class="tag blue">AWS S3</span>
+        <span class="tag blue">CI/CD</span>
+        <span class="tag blue">Linux</span>
+        <span class="tag blue">Postman</span>
+      </div>
+
+      <div class="skills-tags-title" style="margin-top:20px">CS Core</div>
+      <div class="tags-row">
+        <span class="tag green">DSA</span>
+        <span class="tag green">OOP</span>
+        <span class="tag green">DBMS</span>
+        <span class="tag green">OS</span>
+        <span class="tag green">Computer Networks</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section id="projects" style="background: var(--bg2);">
+    <div class="section-label">03 — Projects</div>
+    <h2 class="section-title">What I've <span>Built</span></h2>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card reveal">
+        <div class="project-header">
+          <div class="project-icon indigo">🏔</div>
+          <div class="project-links">
+            <a href="https://github.com/Shukla2005" target="_blank" class="project-link" title="GitHub">⌥</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-date">Mar 2026 — Present</div>
+          <div class="project-title">AI-Powered Rockfall Prediction System</div>
+          <div class="project-desc">
+            Developing a rockfall risk prediction system using geospatial terrain data (DEM, slope, aspect).
+            Extracts spatial features using GDAL &amp; rasterio, implements Random Forest, SVM, and Gradient
+            Boosting models for risk classification, with a full Flask + React visualization frontend.
+          </div>
+          <div class="project-stack">
+            <span class="stack-pill">Python</span>
+            <span class="stack-pill">scikit-learn</span>
+            <span class="stack-pill">TensorFlow</span>
+            <span class="stack-pill">GIS</span>
+            <span class="stack-pill">Flask</span>
+            <span class="stack-pill">React</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-header">
+          <div class="project-icon cyan">📄</div>
+          <div class="project-links">
+            <a href="https://github.com/Shukla2005" target="_blank" class="project-link" title="GitHub">⌥</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-date">May 2025</div>
+          <div class="project-title">Resume Parser</div>
+          <div class="project-desc">
+            NLP-based parser using spaCy to extract skills, education, and experience from resumes.
+            Improved accuracy with preprocessing and regex, added candidate ranking based on job matching,
+            and built a full-stack app with Flask and React for resume upload and structured output.
+          </div>
+          <div class="project-stack">
+            <span class="stack-pill">Python</span>
+            <span class="stack-pill">NLP</span>
+            <span class="stack-pill">spaCy</span>
+            <span class="stack-pill">Flask</span>
+            <span class="stack-pill">React</span>
+            <span class="stack-pill">MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-header">
+          <div class="project-icon purple">🌐</div>
+          <div class="project-links">
+            <a href="https://github.com/Shukla2005" target="_blank" class="project-link" title="GitHub">⌥</a>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-date">Mar 2024</div>
+          <div class="project-title">Personal Portfolio Website</div>
+          <div class="project-desc">
+            Created a responsive portfolio using React to showcase projects and skills. Implemented smooth
+            UI interactions and reusable components for better performance. Deployed on GitHub Pages with
+            cross-device compatibility.
+          </div>
+          <div class="project-stack">
+            <span class="stack-pill">React</span>
+            <span class="stack-pill">JavaScript</span>
+            <span class="stack-pill">HTML5</span>
+            <span class="stack-pill">CSS3</span>
+            <span class="stack-pill">Tailwind</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── EDUCATION ─── -->
+  <section id="education">
+    <div class="section-label">04 — Education</div>
+    <h2 class="section-title">Academic <span>Journey</span></h2>
+
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="edu-year">2023 — 2027</div>
+        <div class="edu-degree">B.Tech — Computer Science &amp; Engineering</div>
+        <div class="edu-school">Pranveer Singh Institute of Technology (PSIT), Kanpur, UP</div>
+        <div class="edu-grade">📊 CGPA: <strong>68.38%</strong> till 5th Semester</div>
+      </div>
+
+      <div class="edu-card reveal reveal-delay-1">
+        <div class="edu-year">2020 — 2022</div>
+        <div class="edu-degree">Intermediate — Class XII</div>
+        <div class="edu-school">S.V.M Inter College, Farrukhabad, UP</div>
+        <div class="edu-grade">📊 Score: <strong>74.4%</strong></div>
+      </div>
+
+      <div class="edu-card reveal reveal-delay-2">
+        <div class="edu-year">2019 — 2020</div>
+        <div class="edu-degree">High School — Class X</div>
+        <div class="edu-school">S.V.M Inter College, Farrukhabad, UP</div>
+        <div class="edu-grade">📊 Score: <strong>81.3%</strong></div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div style="margin-top: 64px;">
+      <div class="section-label">Certifications</div>
+      <div class="cert-grid">
+        <div class="cert-card reveal">
+          <div class="cert-issuer">Infosys Springboard</div>
+          <div class="cert-name">JavaScript Certification</div>
+          <div class="cert-year">2024</div>
+        </div>
+        <div class="cert-card reveal reveal-delay-1">
+          <div class="cert-issuer">GeeksforGeeks</div>
+          <div class="cert-name">Full Stack Developer Bootcamp</div>
+          <div class="cert-year">2025</div>
+        </div>
+        <div class="cert-card reveal reveal-delay-2">
+          <div class="cert-issuer">Google Cloud</div>
+          <div class="cert-name">Innovating with Google Cloud AI</div>
+          <div class="cert-year">2025</div>
+        </div>
+        <div class="cert-card reveal reveal-delay-3">
+          <div class="cert-issuer">Oracle University</div>
+          <div class="cert-name">Oracle Cloud Infrastructure 2025 AI Foundations Associate</div>
+          <div class="cert-year">2025</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Achievements -->
+    <div style="margin-top: 64px;">
+      <div class="section-label">Achievements</div>
+      <div class="achievements-row">
+        <div class="ach-card reveal">
+          <div class="ach-icon">⚡</div>
+          <div>
+            <div class="ach-num">150+</div>
+            <div class="ach-desc">LeetCode problems solved</div>
+          </div>
+        </div>
+        <div class="ach-card reveal reveal-delay-1">
+          <div class="ach-icon">🏆</div>
+          <div>
+            <div class="ach-num">4★</div>
+            <div class="ach-desc">HackerRank Problem Solving</div>
+          </div>
+        </div>
+        <div class="ach-card reveal reveal-delay-2">
+          <div class="ach-icon">🎓</div>
+          <div>
+            <div class="ach-num">4+</div>
+            <div class="ach-desc">Industry Certifications</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact">
+    <div class="section-label" style="justify-content: center;">05 — Contact</div>
+    <h2 class="section-title" style="text-align: center;">Let's <span>Connect</span></h2>
+
+    <div class="contact-inner reveal">
+      <p>
+        I'm actively looking for <strong>ML internships</strong>, <strong>full-stack projects</strong>,
+        and open-source collaborations. If you have an exciting project or opportunity, let's talk!
+      </p>
+
+      <a href="mailto:shuklaarjun101@gmail.com" class="contact-email-big">
+        shuklaarjun101@gmail.com
+      </a>
+
+      <div class="contact-links">
+        <a href="mailto:shuklaarjun101@gmail.com" class="contact-link email">✉ Email Me</a>
+        <a href="https://www.linkedin.com/in/shuklaarjun28" target="_blank" class="contact-link linkedin">🔗 LinkedIn</a>
+        <a href="https://github.com/Shukla2005"             target="_blank" class="contact-link github">⌥ GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <p>Designed &amp; built by <span>Arjun Shukla</span> — © 2026. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
