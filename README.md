@@ -23,7 +23,7 @@
 
 ## 🔗 Live Demo
 
-👉 **Portfolio Website:** https://vercel.com/shukla2005s-projects/my-portfolio/DUjgqC6U2BxeHgqbMEQsvwp96y4b
+👉 **Portfolio Website:** https://my-portfolio-git-main-shukla2005s-projects.vercel.app
 👉 **GitHub Repository:** https://github.com/Shukla2005/MyPortfolio
 
 ---
